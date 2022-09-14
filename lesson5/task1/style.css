@@ -1,12 +1,12 @@
-[data-description='anchors'] {
-    background-color: grey;
+* {
+    background-color: green;
 }
-[data-description] {
+li {
     font-size: 24px;
 }
-a[href][target] {
-    color: green;
-}
-input[type='text'] {
+.pfge-header {
     background-color: orange;
+}
+#best {
+    border: 2px solid red;
 }

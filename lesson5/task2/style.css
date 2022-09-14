@@ -1,13 +1,12 @@
-.super-important.highlighted {
-    background-color: red;
+[data-description='anchors'] {
+    background-color: grey;
 }
-.highlighted,
-.company-data {
-    color: yellow;
-}
-li.user-data {
+[data-description] {
     font-size: 24px;
 }
-span.user-data {
-    font-size: 10px;
+a[href][target] {
+    color: green;
+}
+input[type='text'] {
+    background-color: orange;
 }
