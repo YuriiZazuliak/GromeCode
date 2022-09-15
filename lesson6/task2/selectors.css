@@ -1,11 +1,11 @@
 li {
     margin-bottom: 16px;
 }
-ol > span {
+ol span {
     background-color: green;
     color: white;
 }
-ul > span {
+ul span {
     background-color: orange;
     color: white;
 }
