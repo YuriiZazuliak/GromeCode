@@ -7,14 +7,14 @@
 }
 .to-be-learned > ol {
     background-color: orange;
-    color: white;
+    color: green;
 }
 .to-be-learned code {
     background-color: green;
 }
-#special1 + h4 > code {
+#special1 + h4 code {
     border: 2px solid blue;
 }
-#special2 ~ {
+#special2 ~ li {
     font-size: 24px;
 }
