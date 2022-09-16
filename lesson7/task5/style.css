@@ -28,11 +28,11 @@ div > p {
 input[type='text'] {
     background-color: grey;
 }
-div:nth-of-type(3) p {
+/* div:nth-of-type(3) p {
     background-color: yellow;
-}
+} */
 div:nth-of-type(3) p:last-child {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 div:nth-of-type(3) em {
     color: white;
