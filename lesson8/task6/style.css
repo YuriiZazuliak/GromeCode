@@ -4,11 +4,11 @@
 .greenBox {
     width: 100px;
     height: 50px;
-    border-radius: 16%;
-    -webkit-border-radius: 16%;
-    -moz-border-radius: 16%;
-    -ms-border-radius: 16%;
-    -o-border-radius: 16%;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
     background-color: forestgreen;
 }
 .fioletNotSircle {
