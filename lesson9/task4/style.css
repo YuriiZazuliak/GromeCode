@@ -6,14 +6,13 @@
     height: 40px;
 }
 .nav-list {
-    display: block;
     color: white;
-    margin: auto;
+    margin: 0;
 }
 .nav-item {
     margin-left: 16px;
     list-style-type: none;
-    display: inline-block;
+    float: left;
     margin-top: 10px;
 }
 .content {
