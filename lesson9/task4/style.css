@@ -1,6 +1,9 @@
 .header {
     background-color: darkturquoise;
     height: 40px;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
 }
 .navigation {
     height: 40px;
@@ -25,8 +28,7 @@
     width: 200px;
     height: 200px;
     background-color: aquamarine;
-    margin: auto;
-    position: fixed;
+    position: relative;
     left: calc(50vw - 100px);
     top: calc(50vh - 100px);
 }
