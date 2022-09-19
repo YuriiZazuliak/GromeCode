@@ -16,7 +16,7 @@
     margin-left: 16px;
     list-style-type: none;
     float: left;
-    margin-top: 10px;
+    line-height: 40px;
 }
 .content {
     background-color: beige;
