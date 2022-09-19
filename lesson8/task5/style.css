@@ -1,0 +1,19 @@
+body {
+    padding: 50px;
+}
+.padding {
+    padding: 50px;
+    border: 2px solid black;
+}
+.blueBox {
+    background-color: blue;
+}
+.yellowBox {
+    background-color: yellow;
+}
+.greenBox {
+    background-color: green;
+}
+.pinkBox {
+    background-color: pink;
+}
