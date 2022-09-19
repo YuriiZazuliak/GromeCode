@@ -1,21 +1,17 @@
-.blockShape {
-    width: 20%;
-    height: 200px;
+.container {
+    width: 50%;
     box-sizing: border-box;
     float: left;
 }
-.block_red {
+.red {
     background-color: red;
+    float: right;
 }
-.block_green {
+.green {
     background-color: green;
+    float: left;
 }
-.block_blue {
-    background-color: blue;
-}
-.block_yellow {
-    background-color: yellow;
-}
-.block_black {
-    background-color: black;
+.footer {
+    clear: both;
+    box-sizing: border-box;
 }
