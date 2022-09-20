@@ -23,7 +23,7 @@ body {
 .pinkSection {
     background-color: pink;
     display: flex;
-    width: calc(100vw - 200px);
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
 }
