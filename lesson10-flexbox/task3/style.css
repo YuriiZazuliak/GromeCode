@@ -29,6 +29,7 @@ body {
 }
 .pinkSection h2 {
     line-height: calc(100vh - 80px);
+    margin: 0;
 }
 .aside {
     box-sizing: border-box;
