@@ -25,10 +25,9 @@ body {
     display: flex;
     width: calc(100vw - 200px);
     justify-content: center;
-    /* align-items: center;  */
+    align-items: center;
 }
 .pinkSection h2 {
-    line-height: calc(100vh - 80px);
     margin: 0;
 }
 .aside {
