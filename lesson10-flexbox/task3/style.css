@@ -9,15 +9,18 @@ body {
 .navigation {
     height: 40px;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
 }
 .navItem {
-    margin-left: 16px;
+    margin: 0 0 0 16px;
+    line-height: 40px;
 }
 .content {
     display: flex;
     height: calc(100vh - 80px);
+}
+h2 {
+    margin: 0;
 }
 .pinkSection {
     background-color: pink;
@@ -48,8 +51,8 @@ li {
     background-color: green;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-/* .footerText {
+.footerText {
+    line-height: 40px;
     margin: auto;
-} */
+}
