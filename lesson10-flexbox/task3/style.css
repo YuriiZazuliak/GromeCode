@@ -24,11 +24,11 @@ body {
     background-color: pink;
     display: flex;
     width: calc(100vw - 200px);
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    /* align-items: center;  */
 }
 .pinkSection h2 {
-    margin: auto;
+    line-height: calc(100vh - 80px);
 }
 .aside {
     box-sizing: border-box;
