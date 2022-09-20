@@ -10,23 +10,24 @@ body {
     height: 40px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 .navItem {
     margin-left: 16px;
 }
 .content {
     display: flex;
-
     height: calc(100vh - 80px);
 }
 .pinkSection {
     background-color: pink;
     display: flex;
-    width: 100%;
+    width: calc(100vw - 200px);
     justify-content: center;
     align-items: center;
 }
 .aside {
+    box-sizing: border-box;
     width: 200px;
     background-color: grey;
     text-align: center;
@@ -46,7 +47,9 @@ li {
     height: 40px;
     background-color: green;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footerText {
+/* .footerText {
     margin: auto;
-}
+} */
