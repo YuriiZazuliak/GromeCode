@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .dropdown {
     margin: 16px;
     width: fit-content;
@@ -21,7 +24,6 @@
 .dropdown:hover .menu-list {
     display: block;
 }
-
 .menu-list {
     margin: 0;
     padding: 0;
