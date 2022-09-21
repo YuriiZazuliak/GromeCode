@@ -1,11 +1,12 @@
-html {
-    margin: 16px;
+body {
+    padding: 16px;
 }
 * {
     box-sizing: border-box;
 }
 .dropdown {
     width: fit-content;
+    /* margin: 16px; */
 }
 .menu-button {
     display: inline-block;
