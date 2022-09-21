@@ -2,17 +2,18 @@
     box-sizing: border-box;
 }
 .dropdown {
-    margin: 16px 0 0 16px;
+    margin: 16px;
     width: fit-content;
 }
 .menu-button {
-    display: inline-block;
+    display: block;
     padding: 16px;
     background-color: darkgreen;
     opacity: 0.8;
     color: white;
     font-size: 16px;
     width: fit-content;
+    height: fit-content;
     cursor: pointer;
 }
 .menu-button:hover {
