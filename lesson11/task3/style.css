@@ -1,11 +1,8 @@
-body {
-    margin: 0;
-}
 * {
     box-sizing: border-box;
 }
 .dropdown {
-    margin: 16px;
+    margin: 16px 0 0 16px;
     width: fit-content;
 }
 .menu-button {
