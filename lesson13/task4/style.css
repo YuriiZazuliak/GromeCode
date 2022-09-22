@@ -1,6 +1,6 @@
-/* .gallery {
+.gallery {
     display: flex;
-} */
+}
 .image {
     width: 200px;
     box-sizing: border-box;
@@ -10,5 +10,4 @@
     background-repeat: no-repeat;
     margin: 16px;
     border: 1px dotted grey;
-    display: inline-block;
 }
