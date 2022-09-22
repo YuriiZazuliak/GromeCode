@@ -16,7 +16,7 @@ div {
     height: 200px;
     background-color: coral;
     color: white;
-    text-decoration: uppercase;
+    text-transform: uppercase;
     text-align: center;
     line-height: 200px;
 }
