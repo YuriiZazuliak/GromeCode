@@ -2,11 +2,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
-    font-size: 74px;
     width: 50%;
     margin: 0 auto;
 }
 h1 {
+    font-size: 74px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
