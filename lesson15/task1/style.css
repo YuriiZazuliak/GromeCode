@@ -1,14 +1,11 @@
 * {
     box-sizing: border-box;
 }
-.image-container {
-    text-align: center;
-    margin: 50px auto;
-    width: fit-content;
-}
+/* .image-container {
+} */
 .image-container img {
     display: block;
-
+    margin: 50px auto;
     max-width: 100%;
     border-radius: 20px;
     -webkit-border-radius: 20px;
