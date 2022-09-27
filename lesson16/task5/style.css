@@ -3,22 +3,17 @@
 }
 form {
     margin: 32px;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 input[readonly] {
     margin-top: 16px;
-}
-input[type='color'] {
-    width: 50px;
 }
 input,
 textarea,
 .languages,
 select {
-    margin-top: 8px;
+    margin: 8px;
     display: block;
-    width: max-content;
 }
 .languages input {
     display: inline;
