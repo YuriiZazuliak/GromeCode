@@ -6,7 +6,7 @@ form {
     display: block;
 }
 input[readonly] {
-    margin-top: 16px;
+    margin-top: 17px;
 }
 input,
 textarea,
@@ -14,7 +14,6 @@ textarea,
 select {
     margin: 8px;
     display: block;
-    padding: 0;
 }
 .languages input {
     display: inline;
