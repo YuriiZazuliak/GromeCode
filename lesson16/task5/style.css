@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    margin: 32px;
+    display: block;
+}
+input {
+    margin: 8px;
+    display: block;
+}
+.languages input {
+    display: inline;
+    margin: auto;
+}
