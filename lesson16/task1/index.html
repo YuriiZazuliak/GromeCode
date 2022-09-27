@@ -12,27 +12,28 @@
 </head>
 
 <body>
-    <div class="formWrap"><input type="text" name="lastName" value="Emerson"></div>
-    <div class="formWrap"><input type="number" name="age" value="17"></div>
     <form>
-        <input type="checkbox" name="agree" id="agree">
-        <label for="agree">Accept terms and conditions</label>
+        <div class="formWrap"><input type="text" name="lastName" value="Emerson"></div>
+        <div class="formWrap"><input type="number" name="age" value="17"></div>
+        <div>
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">Accept terms and conditions</label>
+        </div>
+        <div class="choose-gender">
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="secret">
+            <label for="secret">Secret</label>
+        </div>
+        <div>
+            <textarea name="description" placeholder="Write description..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
     </form>
-    <div class="choose-gender">
-        <input type="radio" name="gender" id="male" checked>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="secret">
-        <label for="secret">Secret</label>
-    </div>
-    <div>
-        <textarea name="description" placeholder="Write description..."></textarea>
-    </div>
-    <div>
-        <button type="submit">Submit</button>
-    </div>
-
 </body>
 
 </html>
