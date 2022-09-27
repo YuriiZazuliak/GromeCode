@@ -8,7 +8,10 @@ form {
 input[readonly] {
     margin-top: 16px;
 }
-input {
+input,
+textarea,
+.languages,
+select {
     margin: 8px;
     display: block;
 }
