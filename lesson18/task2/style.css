@@ -19,6 +19,7 @@ button {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    vertical-align: middle;
 }
 button:hover {
     color: darkcyan;
