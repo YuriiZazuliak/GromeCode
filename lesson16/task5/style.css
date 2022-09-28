@@ -5,13 +5,10 @@ form {
     margin: 32px;
     display: block;
 }
-input[readonly] {
+/* input[readonly] {
     margin-top: 16px;
-}
-input,
-textarea,
-.languages,
-select {
+} */
+div {
     margin: 8px;
     display: block;
 }
