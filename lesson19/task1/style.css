@@ -1,0 +1,58 @@
+.container {
+    margin: 32px;
+    box-sizing: border-box;
+}
+.rect {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: coral;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+}
+.rect:hover {
+    width: 100%;
+    opacity: 1;
+    transition: width 2s, opacity 0.5s;
+    -webkit-transition: width 2s, opacity 0.5s;
+    -moz-transition: width 2s, opacity 0.5s;
+    -ms-transition: width 2s, opacity 0.5s;
+    -o-transition: width 2s, opacity 0.5s;
+}
+.linear {
+    transition: linear;
+    -webkit-transition: linear;
+    -moz-transition: linear;
+    -ms-transition: linear;
+    -o-transition: linear;
+}
+.ease {
+    transition: ease;
+    -webkit-transition: ease;
+    -moz-transition: ease;
+    -ms-transition: ease;
+    -o-transition: ease;
+}
+.ease-in {
+    transition: ease-in;
+    -webkit-transition: ease-in;
+    -moz-transition: ease-in;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+}
+.ease-out {
+    transition: ease-out;
+    -webkit-transition: ease-out;
+    -moz-transition: ease-out;
+    -ms-transition: ease-out;
+    -o-transition: ease-out;
+}
+.ease-in-out {
+    transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+}
