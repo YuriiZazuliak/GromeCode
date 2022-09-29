@@ -1,0 +1,57 @@
+@keyframes squareAnim {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: coral;
+    }
+    12.5% {
+        top: 0;
+        left: 300px;
+        background-color: cornflowerblue;
+    }
+    25% {
+        top: 300px;
+        left: 300px;
+        background-color: aqua;
+    }
+    37.5% {
+        top: 300px;
+        left: 0;
+        background-color: yellowgreen;
+    }
+    50% {
+        top: 0;
+        left: 0;
+        background-color: coral;
+    }
+    62.5% {
+        top: 300px;
+        left: 0;
+        background-color: yellowgreen;
+    }
+    75% {
+        top: 300px;
+        left: 300px;
+        background-color: aqua;
+    }
+    87.5% {
+        top: 0;
+        left: 300px;
+        background-color: cornflowerblue;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: coral;
+    }
+}
+/* @keyframes squareRev {
+} */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: relative;
+    animation: squareAnim 1 8s linear;
+    -webkit-animation: squareAnim 1 8s linear;
+}
