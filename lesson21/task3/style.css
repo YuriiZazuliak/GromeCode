@@ -22,6 +22,7 @@ body {
 .footer {
     background-color: #e5e5e5;
     padding: 0.5em;
+    text-align: center;
 }
 .main {
     display: flex;
@@ -48,7 +49,7 @@ body {
 li a {
     display: block;
     width: 100%;
-    padding-left: 0.5em;
+    padding: 0 0.5em;
     text-decoration: none;
     color: white;
     overflow: hidden;
@@ -66,8 +67,8 @@ li a {
 }
 .units-list {
     line-height: 1.75em;
-    list-style-type: none;
-    padding: 0;
+    /* list-style-type: none; */
+    /* padding: 0; */
 }
 
 .css-units {
