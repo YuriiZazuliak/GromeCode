@@ -15,7 +15,8 @@ body {
 .header {
     text-align: center;
     color: white;
-    padding: 0.1px;
+    box-sizing: border-box;
+    border: 0.1px solid rgba(0, 0, 0, 0);
     background: linear-gradient(65deg, red, orange);
 }
 h1 {
