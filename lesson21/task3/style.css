@@ -15,9 +15,12 @@ body {
 .header {
     text-align: center;
     color: white;
-    height: max-content;
     padding: 0.1px;
     background: linear-gradient(65deg, red, orange);
+}
+h1 {
+    text-align: center;
+    color: white;
 }
 .footer {
     background-color: #e5e5e5;
@@ -74,7 +77,7 @@ li a {
 .css-units {
     color: #8b0000;
     background-color: #e5e5e5;
-    font-size: 1.125em;
+    font-size: 1.12em;
     font-weight: 700;
 }
 .news {
