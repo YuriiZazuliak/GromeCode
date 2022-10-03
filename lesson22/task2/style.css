@@ -1,0 +1,73 @@
+.blocksWrap {
+    display: flex;
+}
+.fstBlock {
+    display: flex;
+    flex-grow: 1;
+    background-color: #ff7f50;
+    height: 200px;
+}
+.sstBlock {
+    display: flex;
+    flex-grow: 1;
+    background-color: #006400;
+    height: 200px;
+}
+.tstBlock {
+    display: flex;
+    background-color: #0ff;
+    height: 200px;
+    flex-grow: 1;
+}
+p {
+    display: block;
+    width: fit-content;
+    text-transform: lowercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+    margin: auto;
+    background-color: #faebd7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+@media screen and (min-width: 900px) {
+    .blocksWrap {
+        flex-direction: row;
+    }
+    .twoBlockWrap {
+        display: flex;
+        flex-direction: row;
+        flex: 2 1;
+    }
+    .fstBlock {
+        width: 50%;
+    }
+    .sstBlock {
+        width: 50%;
+    }
+    .tstBlock {
+        flex: 1 1;
+    }
+}
+@media screen and (max-width: 899px) {
+    .blocksWrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .twoBlockWrap {
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blocksWrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .twoBlockWrap {
+        display: flex;
+        flex-direction: column;
+    }
+}
