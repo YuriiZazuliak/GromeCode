@@ -42,7 +42,7 @@ h1 {
     padding: 0.5em;
 }
 .navigation {
-    width: 25%;
+    width: calc(100vw / 5);
 }
 .navigation ul {
     padding: 0;
