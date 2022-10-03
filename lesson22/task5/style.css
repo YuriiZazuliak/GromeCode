@@ -65,7 +65,7 @@ li a {
 }
 
 .section {
-    width: inherit;
+    width: min-content;
     flex-grow: 1;
     font-size: 1.25em;
 }
