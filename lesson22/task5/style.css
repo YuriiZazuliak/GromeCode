@@ -89,7 +89,7 @@ img {
 .news {
     width: 20%;
 }
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) {
     .navAndMainWrap {
         display: flex;
         width: 100%;
