@@ -60,6 +60,12 @@ p {
     .twoBlockWrap {
         display: flex;
     }
+    .fstBlock {
+        flex: 1 1;
+    }
+    .sstBlock {
+        flex: 1 1;
+    }
 }
 @media screen and (max-width: 600px) {
     .blocksWrap {
@@ -69,5 +75,11 @@ p {
     .twoBlockWrap {
         display: flex;
         flex-direction: column;
+    }
+    .fstBlock {
+        flex: auto;
+    }
+    .sstBlock {
+        flex: auto;
     }
 }
