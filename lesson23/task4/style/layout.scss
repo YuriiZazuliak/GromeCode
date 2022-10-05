@@ -1,0 +1,82 @@
+@mixin middle-screan {
+    @media screen and (min-width: 601px) {
+        @content;
+    }
+}
+
+@mixin large-screan {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+.blocksWrap {
+    display: flex;
+    flex-direction: column;
+
+    @include large-screan {
+        flex-direction: row;
+    }
+
+    .twoBlockWrap {
+        display: flex;
+        flex-direction: column;
+
+        @include middle-screan {
+            flex-direction: row;
+        }
+
+        @include large-screan {
+            flex: 2 1;
+        }
+
+        .fstBlock {
+            flex: auto;
+            background-color: #ff7f50;
+
+            @include middle-screan {
+                flex: 1 1;
+            }
+        }
+
+        .sstBlock {
+            flex: auto;
+            background-color: #006400;
+
+            @include middle-screan {
+                flex: 1 1;
+            }
+        }
+    }
+
+    .tstBlock {
+        flex: auto;
+        background-color: #0ff;
+
+        @include large-screan {
+            flex: 1 1;
+        }
+    }
+}
+
+.block {
+    display: flex;
+    flex-grow: 1;
+    flex: auto;
+    height: 200px;
+
+    p {
+        display: block;
+        width: fit-content;
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 8px;
+        margin: auto;
+        background-color: #faebd7;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+}
