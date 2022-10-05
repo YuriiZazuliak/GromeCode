@@ -1,0 +1,10 @@
+$unit: 16px;
+
+$white-color: white;
+$green-color: #006400;
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}

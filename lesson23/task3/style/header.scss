@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+
+.header {
+    height: 3 * $unit;
+    background-color: $green-color;
+}
+
+.menu {
+    height: 3 * $unit;
+    display: flex;
+    list-style-type: none;
+    color: $white-color;
+    align-items: center;
+    margin: 0 0 0 3 * $unit;
+    text-transform: uppercase;
+
+    &__item {
+        height: 3 * $unit;
+        padding: 0 $unit / 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include hover {
+            background-color: #9acd32;
+        }
+
+        &_active {
+            color: yellow;
+
+            @include hover {
+                .submenu {
+                    display: block;
+                }
+            }
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: $unit / 2;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ff7f50;
+            box-sizing: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            color: $white-color;
+            min-width: 120px;
+            z-index: 1;
+
+            &__item {
+                padding: 0 8px;
+                margin: $unit * 1.5 0;
+
+                @include hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
