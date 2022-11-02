@@ -1,0 +1,285 @@
+.header-wrap {
+    width: 100%;
+    max-width: 1400px;
+    background-color: $header-pink;
+
+    @include middle-screan {
+        padding-top: 39px;
+    }
+}
+
+.header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    &__menu {
+        display: flex;
+        position: relative;
+        width: 64px;
+        height: 64px;
+        border-left: 2px solid rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+
+        @include hover {
+            .navigation-wrap {
+                display: block;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                z-index: 3;
+            }
+
+            .get-started {
+                display: none;
+            }
+        }
+
+
+    }
+
+
+
+    @include large-screan {
+        margin: 0 auto;
+        align-items: center;
+        max-width: 1140px;
+        background-color: rgba(243, 198, 189, 1);
+
+
+
+        .icon {
+            display: flex;
+            padding: 0;
+            margin: auto 0;
+            align-self: flex-end;
+
+
+
+            &__svg {
+                display: inline-block;
+                vertical-align: middle;
+                width: 60px;
+                height: 60px;
+            }
+
+            &__text-wrap {
+                display: inline-block;
+            }
+
+            &__name {
+                display: block;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                height: 25px;
+                color: $font-color;
+                margin-left: 15px;
+            }
+
+            &__description {
+                display: block;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: $font-color;
+                opacity: 0.6;
+                margin-left: 15px;
+            }
+        }
+
+        &__menu {
+            border-left: none;
+            width: auto;
+
+            @include hover {
+                .navigation-wrap {
+                    display: flex;
+                    position: initial;
+                }
+
+                .get-started {
+                    display: block;
+                }
+            }
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .navigation-wrap {
+            display: flex;
+
+            .navigation {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                margin-right: 65px;
+                padding: 7px 0;
+                width: 290px;
+                list-style-type: none;
+                background-color: rgba(243, 198, 189, 1);
+
+                &__item {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    white-space: nowrap;
+                    line-height: 25px;
+
+                    &_selected {
+                        font-weight: 700;
+                    }
+
+                    .arrow {
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-right: 2px solid $font-color;
+                        border-bottom: 2px solid $font-color;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        vertical-align: middle;
+                        margin-left: 0;
+                    }
+
+                    @include hover {
+                        color: white;
+
+                        .arrow {
+                            border-color: white;
+                        }
+                    }
+                }
+            }
+
+            .get-started {
+                display: block;
+                width: 160px;
+                height: 48px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 13px;
+                color: white;
+                background-color: $blue-color;
+                border: 0;
+            }
+        }
+    }
+}
+
+.icon {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+
+    &__svg {
+        vertical-align: middle;
+    }
+
+    &__text-wrap {
+        margin-left: 13px;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: $font-color;
+    }
+
+    &__description {
+        display: none;
+    }
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13px;
+    width: 18px;
+    margin: auto;
+
+    &__line {
+        width: 18px;
+        height: 2px;
+        background-color: rgba(44, 50, 65, 1);
+        opacity: 0.6;
+    }
+}
+
+.navigation-wrap {
+    display: none;
+
+    .navigation {
+
+        margin: 0;
+        padding: 2px;
+        list-style-type: none;
+        background-color: #FCF0E3;
+
+        &__item {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3em;
+            display: block;
+            margin: 15px 20px;
+            white-space: nowrap;
+
+            &_selected {
+                font-weight: 700;
+            }
+
+            .arrow {
+                display: inline-block;
+                width: 0.5em;
+                height: 0.5em;
+                border-right: 4px solid $font-color;
+                border-bottom: 4px solid $font-color;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+
+            @include hover {
+                color: white;
+
+                .arrow {
+                    border-color: white;
+                }
+            }
+        }
+    }
+
+
+}
+
+.get-started {
+    display: block;
+    width: 160px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    color: white;
+    background-color: $blue-color;
+    border: 0;
+    cursor: pointer;
+
+    @include hover {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,24 @@
+//veriables
+$blue-color: rgba(48, 64, 196, 1);
+$font-color: #2B292D;
+$header-pink: rgba(243, 198, 189, 1);
+
+// MIXINS
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin middle-screan {
+    @media screen and (min-width: 650px) {
+        @content;
+    }
+}
+
+@mixin large-screan {
+    @media screen and (min-width: 950px) {
+        @content;
+    }
+}

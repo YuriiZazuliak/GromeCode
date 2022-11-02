@@ -1,0 +1,224 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 23px;
+    background-color: white;
+
+    @include middle-screan {
+        .product-company {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+        }
+    }
+
+    @include large-screan {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+
+        .apps {
+            margin-left: 9.2%;
+            text-align: left;
+
+            .icon {
+                display: flex;
+
+                &__text-wrap {
+                    margin-top: 0;
+                    margin-left: 15px;
+                    align-self: center;
+
+
+                    .icon__name {
+                        text-align: left;
+                    }
+
+                    .icon__description {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &__text-p {
+                display: block;
+                max-width: 299px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: $font-color;
+                opacity: 0.6;
+            }
+
+            &-wrap {
+                margin: 25px 0;
+            }
+        }
+
+        .small-line {
+            display: none;
+        }
+
+        .long-line {
+            display: inline;
+            width: 100%;
+        }
+
+
+
+        .product-company {
+            display: block;
+            margin: 2px auto 0 9%;
+            list-style-type: none;
+            padding: 0;
+            width: 265px;
+
+            &__title {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 28px;
+                margin: 18px 0;
+            }
+
+            &__item {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: rgba(43, 41, 45, 0.6);
+            }
+
+            &__a {
+                text-decoration: none;
+                color: $font-color;
+                opacity: 0.6;
+            }
+        }
+
+        .company {
+            flex-grow: 1.5;
+            margin-left: 29px;
+            width: auto;
+        }
+
+        .footer__menu {
+            margin: 5px 129px 0 132px;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-grow: 1;
+            height: 22px;
+        }
+
+    }
+
+
+
+}
+
+.apps {
+    text-align: center;
+
+    .icon {
+
+        &__text-wrap {
+            margin-top: 20px;
+        }
+
+        &__name {
+            display: block;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            color: $font-color;
+        }
+
+        &__description {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: rgba(43, 41, 45, 0.6);
+        }
+
+    }
+
+    &__text-p {
+        display: none;
+    }
+
+    &-wrap {
+        margin: 31px auto 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 261px;
+    }
+}
+
+
+.product-company {
+    display: block;
+    margin: 30px auto;
+    list-style-type: none;
+    padding: 0 15px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 18px 0;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: rgba(43, 41, 45, 0.6);
+    }
+
+    &__a {
+        text-decoration: none;
+        color: $font-color;
+        opacity: 0.6;
+    }
+}
+
+.long-line {
+    display: none;
+}
+
+.footer__menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+
+    .footer-nav {
+        padding: 0;
+        margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 180px;
+
+
+        &__item {
+            list-style-type: none;
+
+            .nav-item__a {
+                text-decoration: none;
+                color: $font-color;
+                opacity: 0.6;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &-icons {
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 97px;
+    }
+}

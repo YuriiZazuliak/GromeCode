@@ -1,0 +1,129 @@
+.audiences {
+    width: 100%;
+    background-color: rgba(0, 161, 198, 0.07);
+    padding: 50px 15px;
+
+    @include large-screan {
+        padding: 108px 0 110px;
+    }
+}
+
+.audiences-engage {
+    max-width: 555px;
+    text-align: center;
+    margin: 0 auto;
+
+    &__small-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 34px;
+        margin: 0 0 17px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.357143px;
+        margin: 0 0 18px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 0 30px;
+    }
+
+    &__button-wrap {
+        margin: 0 auto;
+    }
+
+    @include large-screan {
+        &__small-title {
+            margin: 0 0 24px;
+        }
+
+        &__title {
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
+            margin: 0 0 30px;
+        }
+
+        &__text {
+            margin: 0 0 34px;
+        }
+    }
+}
+
+.audiences-menu {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    max-width: 1139px;
+
+    @include middle-screan {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include large-screan {
+        margin-top: 111px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.audiences-menu-item {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 22px 0 33px;
+    cursor: pointer;
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 22px 0 0;
+    }
+
+    &:hover {
+        background-color: $blue-color;
+
+        .audiences-menu-item__title {
+            color: white;
+        }
+    }
+
+    @include middle-screan {
+        flex: 1 1;
+        min-width: 40%;
+        margin: 15px;
+
+    }
+
+    @include large-screan {
+        min-width: 200px;
+        max-width: 262px;
+        margin: 0;
+    }
+}
+
+.audiences-menu-item~.audiences-menu-item {
+    margin-top: 15px;
+
+    @include large-screan {
+        margin: 0;
+
+    }
+}

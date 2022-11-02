@@ -1,0 +1,103 @@
+.feedback {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 39px 15px 50px;
+    border-bottom: 1px solid #E3E3E3;
+    ;
+
+    &__img {
+        width: 100%;
+    }
+
+    @include middle-screan {
+        padding: 46px 15px 66px;
+        text-align: center;
+
+        &__img {
+            max-width: 273px;
+            position: absolute;
+            bottom: 0;
+            right: 26px;
+            z-index: -1;
+        }
+    }
+}
+
+.feedback-content {
+    width: 100%;
+
+    &__blue-text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: $blue-color;
+        margin: 0 0 29px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 0 32px;
+    }
+
+    &__autor {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 24px;
+        margin: 0 0 40px;
+    }
+
+    &__autor-profecy {
+        display: block;
+        font-weight: 400;
+        opacity: 0.6;
+    }
+
+    @include middle-screan {
+        &__blue-text {
+            margin-bottom: 28px;
+        }
+
+        &__text {
+            display: block;
+            max-width: 750px;
+            margin: 0 auto 34px;
+        }
+
+        &__autor {
+            margin: 0 0 38px;
+        }
+    }
+}
+
+.circles-wrap {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+
+    &__circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: $font-color;
+        opacity: 0.2;
+
+        &:first-child {
+            background-color: $blue-color;
+            opacity: 1;
+        }
+    }
+
+    @include middle-screan {
+        margin-bottom: 0;
+    }
+}

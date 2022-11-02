@@ -1,0 +1,28 @@
+@import "./veriables&mixin.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    color: $font-color;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@import "header.scss";
+@import "./headline.scss";
+@import "./about.scss";
+@import "./customers.scss";
+@import "./features.scss";
+@import "./inbox.scss";
+@import "./comunications.scss";
+@import "./audiences.scss";
+@import "./feedback.scss";
+@import "./hiring.scss";
+@import "./order.scss";
+@import "./footer.scss";

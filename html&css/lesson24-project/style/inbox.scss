@@ -1,0 +1,154 @@
+.inbox {
+    width: 100%;
+    display: block;
+    background-color: rgba(252, 240, 227, 0.4);
+    padding: 50px 15px;
+
+    @include middle-screan {
+        padding: 142px 9% 101px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.inbox-img-wrap {
+    max-width: 425px;
+    flex: 1 1;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        display: none;
+
+        @include middle-screan {
+            display: block;
+            text-align: center;
+            color: rgba(43, 41, 45, 0.6);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1170px) {
+    .inbox {
+        justify-content: right;
+    }
+
+    .inbox-img-wrap {
+        min-width: 425px;
+        position: absolute;
+        top: 142px;
+        right: 620px;
+    }
+
+    .inbox-content {
+        margin-right: 0;
+        align-self: flex-end;
+    }
+
+}
+
+.inbox-content {
+    padding-top: 32px;
+    flex: 1 1;
+
+    &__red-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 34px;
+        color: #F1592B;
+        margin: 0 0 17px 0;
+    }
+
+    &__main-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        margin: 0 0 18px 0;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 0 30px;
+    }
+
+    @include middle-screan {
+        max-width: 519px;
+        min-width: 519px;
+        padding: 0;
+
+        &__red-title {
+            margin: 0 0 24px 0;
+            padding-left: 30px;
+        }
+
+        &__main-title {
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
+            margin: 0 0 30px 0;
+            padding-left: 30px;
+        }
+
+        &__text {
+            max-width: 487px;
+            margin: 0 0 44px;
+            padding-left: 30px;
+        }
+    }
+}
+
+.inbox-coment {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    border-bottom: 4px solid rgba(1, 133, 208, 1);
+
+    &__text {
+        display: block;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0 0 26px;
+    }
+
+    @include middle-screan {
+        padding: 30px;
+    }
+}
+
+.inbox-coment-autor {
+    display: flex;
+
+    &__photo {
+        vertical-align: middle;
+        margin-right: 11px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__name {
+        display: block;
+        width: auto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    &__profecy {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(43, 41, 45, 0.6);
+    }
+}

@@ -1,0 +1,109 @@
+.order {
+    width: 100%;
+    padding: 50px 15px;
+    background-color: #F4F5F7;
+
+    &__imagine {
+        display: block;
+        width: 62.5%;
+        margin: 0 auto 40px;
+
+    }
+
+    @include middle-screan {
+        padding: 75px 15px;
+        display: flex;
+        justify-content: center;
+
+        &__imagine {
+            max-width: 270px;
+            margin: 0 8.6% 0 0;
+        }
+    }
+}
+
+.order-content {
+    max-width: 555px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.25px;
+        margin: 0 0 18px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0 0 40px;
+    }
+
+    @include middle-screan {
+        &__title {
+            text-align: left;
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            margin-bottom: 26px;
+        }
+
+    }
+}
+
+.order-form {
+    &__input {
+        width: 100%;
+        height: 48px;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        margin-bottom: 12px;
+        padding-left: 15px;
+    }
+
+    &__input::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 13px;
+        color: $font-color;
+        text-align: center;
+    }
+
+    &__button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__options {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+
+        &-href {
+            color: $blue-color;
+        }
+    }
+
+    @include middle-screan {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__input {
+            max-width: 385px;
+            margin-right: 10px;
+        }
+
+        &__input::placeholder {
+            text-align: left;
+        }
+
+        &__button {
+            width: 160px;
+
+        }
+
+    }
+}
