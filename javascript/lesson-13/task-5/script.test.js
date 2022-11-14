@@ -16,7 +16,7 @@ it('delete money from wallet', () => {
   expect(noEnouphMoney).toEqual(-1);
   const res = withdraw(clients, balances, 'John', 9);
   expect(res).toEqual(80);
-  expect(balances).toEqual([34, 56, 89, -4]);
+  expect(balances).toEqual([34, 56, 80, -4]);
 });
 it('Adult filter obj', () => {
   const users = { 'John Doe': 19, Tom: 17, Bob: 18 };
